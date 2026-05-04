@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 1ère année — Enzo Karaly</title>
+  <meta name="description" content="Détails du projet Stage 1ère année">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">EK</a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#parcours">Parcours</a>
+      <a href="Karaly_Grille_E5_1.pdf" target="_blank">Grille E5</a>
+      <a href="projets-perso.html">Projets BTS SIO</a>
+      <a href="projets-stage.html">Projets stage</a>
+      <a href="veille.html">Veille</a>
+      <a href="annexes.html">Annexes</a>
+    </div>
+    <button class="hamburger" onclick="document.getElementById('mobile-menu').style.display = document.getElementById('mobile-menu').style.display === 'block' ? 'none' : 'block'">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#parcours">Parcours</a>
+      <a href="Karaly_Grille_E5_1.pdf" target="_blank">Grille E5</a>
+      <a href="projets-perso.html">Projets BTS SIO</a>
+      <a href="projets-stage.html">Projets stage</a>
+      <a href="veille.html">Veille</a>
+      <a href="annexes.html">Annexes</a>
+  </div>
+</nav>
+
+<section class="project-detail">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="font-display">Stage 1ère année</h2>
+      <p>Présentation et captures du projet réalisé lors du premier stage.</p>
+    </div>
+    <div class="project-content">
+      <h3>Résumé</h3>
+      <p>Support technique et déploiement d'outils en environnement PME — maintenance, assistance utilisateurs, et déploiement d'une interface web interne.</p>
+
+      <h3>Contexte</h3>
+      <p>Stage en entreprise pendant la 1ère année de BTS SIO. Le service de prises des comandes des clients avais besoins d'un outils pour faciliter leurs interractions et les prises de commandes avec les clients.</p>
+
+      <h3>Besoins</h3>
+      <ul>
+        <li>Diagnostiquer les incidents et proposer des solutions.</li>
+        <li>Documenter les interventions et communiquer avec les utilisateurs.</li>
+      </ul>
+
+      <h3>Actions réalisées</h3>
+      <ol>
+        <li>Installation et configuration d'une application web (déploiement).</li>
+        <li>Rédaction de procédures et formation rapide des utilisateurs.</li>
+      </ol>
+
+      <h3>Résultats</h3>
+      <p>Réduction des incidents récurrents, amélioration de la disponibilité des postes et déploiement réussi de l'application web utilisée par l'équipe.</p>
+
+      <h3>Compétences mobilisées</h3>
+      <ul>
+        <li>Analyser un besoin technique et métier.</li>
+        <li>Mettre en oeuvre des solutions (installation, configuration).</li>
+        <li>Communiquer et documenter les actions réalisées.</li>
+        <li>Gérer des incidents et proposer des correctifs.</li>
+      </ul>
+
+      <h3>Outils</h3>
+      <p>Éditeur de texte, scripts de déploiement, navigateur pour l'application web.</p>
+
+      <h3>Rôle & durée</h3>
+      <p>Développeur stagiaire — 1 mois. Participation active aux interventions quotidiennes sous supervision.</p>
+
+      <div class="card">
+        <div class="card-title"><span class="dot"></span></div>
+        <div class="screenshot-grid">
+          <div class="screenshot-slot" id="slot-bdd-2">
+            <img src="accuiel_stage1.png">
+            <div class="slot-caption">Interface principale</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="article_stage1.png">
+            <div class="slot-caption">administrateur : gestion des articles</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="categorie_stage1.png">
+            <div class="slot-caption">administrateur : gestion des catégories</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="commandes_stage1.png">
+            <div class="slot-caption">administrateur : gestion des commandes</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="connexion_stage1.png">
+            <div class="slot-caption">page de connexion</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="bdd_stage1.png">
+            <div class="slot-caption">tables de la base de données</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-1">
+            <img src="bddutilisateurs_stage1.png">
+            <div class="slot-caption">exemple : table utilisateurs </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Liens</h3>
+      <p><a href="https://ugc.sportsakileine.fr/index.php" target="_blank">Site / application liée au stage</a></p>
+
+      <p><a href="projets-stage.html">← Retour aux projets</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 <span class="accent">Enzo Karaly</span> — Portfolio BTS SIO</p>
+  </div>
+</footer>
+
+
+<script>
+  function loadImage(input, slotId, caption) {
+    const file = input.files[0];
+    if (!file) return;
+    const slot = document.getElementById(slotId);
+    const img = slot.querySelector('img');
+    const reader = new FileReader();
+    reader.onload = e => {
+      img.src = e.target.result;
+      slot.classList.add('has-image');
+    };
+    reader.readAsDataURL(file);
+  }
+</script>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-content" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Fermer">✕</button>
+    <img src="" alt="" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<script>
+// Simple lightbox for project screenshots
+document.addEventListener('DOMContentLoaded', function () {
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lbCaption.textContent = alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lbImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.screenshot-card img, .screenshot-slot img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+});
+</script>
+</body>
+</html>

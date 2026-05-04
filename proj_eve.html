@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet EVE — Enzo Karaly</title>
+  <meta name="description" content="Détails du projet EVE - Concessionnaire de luxe">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">EK</a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#parcours">Parcours</a>
+      <a href="Karaly_Grille_E5_1.pdf" target="_blank">Grille E5</a>
+      <a href="projets-perso.html">Projets BTS SIO</a>
+      <a href="projets-stage.html">Projets stage</a>
+      <a href="veille.html">Veille</a>
+      <a href="annexes.html">Annexes</a>
+    </div>
+    <button class="hamburger" onclick="document.getElementById('mobile-menu').style.display = document.getElementById('mobile-menu').style.display === 'block' ? 'none' : 'block'">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#parcours">Parcours</a>
+      <a href="Karaly_Grille_E5_1.pdf" target="_blank">Grille E5</a>
+      <a href="projets-perso.html">Projets BTS SIO</a>
+      <a href="projets-stage.html">Projets stage</a>
+      <a href="veille.html">Veille</a>
+      <a href="annexes.html">Annexes</a>
+  </div>
+</nav>
+
+<section class="project-detail">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="font-display">Projet EVE — Concessionnaire de luxe</h2>
+      <p>Site web de concessionnaire de véhicules électriques haut de gamme — base de données, développement web, interface d'administration.</p>
+    </div>
+    <div class="project-content">
+      <!-- HEADER -->
+      <div class="header-label">Projet BTS SIO — 2026</div>
+      <h1>Projet <span>EVE</span><br>Concessionnaire<br>de luxe</h1>
+      <p>Site web de concessionnaire de véhicules électriques haut de gamme — base de données, développement web, interface d'administration.</p>
+      <div class="tags">
+        <span class="tag">HTML / CSS</span>
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Gestion de projet</span>
+        <span class="tag">Sécurité</span>
+      </div>
+
+      <div class="section-divider">
+        <h2 class="section-title">Base de données</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="highlight">
+        <div class="quote-mark"></div>
+        <p>La base de données est le cœur du projet : elle centralise toutes les informations sur les véhicules, les clients et les réservations, de façon sécurisée et structurée.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <div class="card-title"><span class="dot"></span>Tables principales :</div>
+          <ul class="styled">
+            <li><strong>Véhicules :</strong> modèles, caractéristiques, prix, photos</li>
+            <li><strong>Utilisateurs :</strong> clients, administrateurs, gestion des droits d'accès</li>
+            <li><strong>Réservations :</strong> historique, suivi, gestion des disponibilités</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="dot"></span>Points clés :</div>
+          <ul class="styled">
+            <li><strong>Sécurité :</strong> accès restreint, gestion des permissions</li>
+            <li><strong>Performance :</strong> requêtes optimisées pour un affichage rapide</li>
+            <li><strong>Évolutivité :</strong> structure extensible pour de futurs modèles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-gap"></div>
+
+      <!-- Screenshots BDD -->
+      <div class="card">
+        <div class="card-title"><span class="dot"></span></div>
+        <p>Base de données :</p>
+        <div class="screenshot-grid">
+        <figure class="screenshot-card">
+          <img src="bdd1_eve.png" alt="Structure de la BDD EVE">
+          <figcaption>Structure de la base EVE</figcaption>
+        </figure>
+          <div class="screenshot-slot" id="slot-bdd-2">
+            <img src="bdd2_eve.png" alt="Tables et relations EVE">
+            <div class="slot-caption">Tables et relations EVE</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="bdd3_eve.png" alt="Gestion des données EVE">
+            <div class="slot-caption">Gestion des données EVE</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider">
+        <h2 class="section-title">Site web</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><span class="dot"></span>Un site haut de gamme, pensé pour l'utilisateur</div>
+        <div class="two-col">
+          <ul class="styled">
+            <li><strong>Réservation en ligne :</strong> choix, réservation et gestion de véhicules en quelques clics</li>
+            <li><strong>Catalogue dynamique :</strong> fiches détaillées, photos HD, filtres avancés</li>
+          </ul>
+          <ul class="styled">
+            <li><strong>Espace client sécurisé :</strong> suivi des réservations, historique, notifications</li>
+            <li><strong>Design premium :</strong> navigation fluide, expérience immersive</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><span class="dot"></span>Points forts techniques</div>
+        <ul class="styled">
+          <li>Connexion sécurisée à la base de données pour afficher et gérer les véhicules</li>
+          <li>Gestion des utilisateurs et des droits d'accès (client / administrateur)</li>
+          <li>Respect des normes de sécurité et de confidentialité</li>
+        </ul>
+      </div>
+
+      <!-- Screenshots site web -->
+      <div class="card">
+        <div class="card-title"><span class="dot"></span></div>
+        <div class="screenshot-grid">
+        <figure class="screenshot-card">
+          <img src="eve1.png">
+          <figcaption>Page d'accueil</figcaption>
+        </figure>
+          <div class="screenshot-slot" id="slot-bdd-2">
+            <img src="eve2.png">
+            <div class="slot-caption">Interface principale</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="eve3.png">
+            <div class="slot-caption">barre de recherche pour une selection de vehicules</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="eve4.png">
+            <div class="slot-caption">formulaire de contact</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="eve5.png">
+            <div class="slot-caption">page de connexion</div>
+          </div>
+          <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="eve6.png">
+            <div class="slot-caption">administrateur : gestion des véhicules</div>
+          </div>
+                    <div class="screenshot-slot" id="slot-bdd-3">
+            <img src="eve7.png">
+            <div class="slot-caption">administrateur : gestion des utilisateurs et des messages reçues</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════ PARTIE 3 — BILAN ═══ -->
+      <div class="section-divider">
+        <h2 class="section-title">Bilan du projet</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <div class="card-title"><span class="dot"></span>Difficultés rencontrées</div>
+          <ul class="styled">
+            <li>Concevoir une interface moderne et attractive pour une clientèle haut de gamme</li>
+            <li>Mettre en place la connexion entre le site et la base de données</li>
+            <li>Gérer la sécurité des données et l'authentification des utilisateurs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="dot"></span>Ce que j'en retiens</div>
+          <p>Ce projet m'a permis de prouver ma capacité à mener un projet web complet, de l'idée à la mise en ligne, avec une vraie valeur ajoutée pour un client exigeant.</p>
+        </div>
+      </div>
+
+      <!-- Compétences -->
+      <div class="card">
+        <div class="card-title"><span class="dot"></span>Compétences développées</div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-text"><strong>Web :</strong> HTML, CSS, PHP, gestion MySQL</span>
+          </div>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">📋</span>
+            <span class="skill-text"><strong>Gestion de projet :</strong> organisation, planification, délais</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-text"><strong>Autonomie :</strong> résolution de problèmes, prise d'initiative</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outils -->
+      <div class="card">
+        <div class="card-title"><span class="dot"></span>Outils</div>
+        <div class="tech-grid">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">PHP</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">Git</span>
+          <span class="tech-pill">VS Code</span>
+          <span class="tech-pill">WAMP </span>
+        </div>
+      </div>
+
+      <p><a href="projets-perso.html">← Retour aux projets BTS SIO</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 <span class="accent">Enzo Karaly</span> — Portfolio BTS SIO</p>
+  </div>
+</footer>
+
+<script>
+  function loadImage(input, slotId, caption) {
+    const file = input.files[0];
+    if (!file) return;
+    const slot = document.getElementById(slotId);
+    const img = slot.querySelector('img');
+    const reader = new FileReader();
+    reader.onload = e => {
+      img.src = e.target.result;
+      slot.classList.add('has-image');
+    };
+    reader.readAsDataURL(file);
+  }
+</script>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-content" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Fermer">✕</button>
+    <img src="" alt="" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<script>
+// Simple lightbox for project screenshots
+document.addEventListener('DOMContentLoaded', function () {
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lbCaption.textContent = alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lbImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.screenshot-card img, .screenshot-slot img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+});
+</script>
+
+</body>
+</html>
